@@ -55,10 +55,12 @@ require_once("functions.php");
             // gets the total price from every iteration, stacks them and stores them in variable
             $collected_prices += $total_price;
 
-        } else {
-            echo "Order not completed, please return to previous page to pick items.";
-            break;
-        }
+        } 
+           //needs to be fixed - if no products are chosen
+        // else if ($_POST[$product["counter"] . '_counter'] <= 0){
+        //     echo "Order not completed, please return to previous page to pick items.";
+        //     break;
+        // }
 
     }
 
